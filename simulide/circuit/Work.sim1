@@ -1,0 +1,71 @@
+<circuit version="1.0.0-SR1" rev="1402" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega32-1" mainComp="false" Show_id="true" Show_Val="false" Pos="628,544" rotation="0" hflip="1" vflip="1" label="mega32-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="1 MHz" Program="../ATmega32_External_Event_Object_Counter/out/Object_Counter/default.hex" Auto_Load="false" Rst_enabled="true" Ext_Osc="false" Wdt_enabled="false" />
+
+<item itemtype="Led" CircId="Led-2" mainComp="false" Show_id="false" Show_Val="false" Pos="816,664" rotation="0" hflip="1" vflip="1" label="Led-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="AudioOut" CircId="AudioOut-3" mainComp="false" Show_id="false" Show_Val="false" Pos="568,480" rotation="0" hflip="1" vflip="1" label="AudioOut-3" idLabPos="-20,-36" labelrot="0" valLabPos="-16,20" valLabRot="0" Buzzer="true" Impedance="220 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-4" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="904,664" rotation="0" hflip="1" vflip="1" label="Resistor-4" idLabPos="-16,-24" labelrot="0" valLabPos="-11,11" valLabRot="0" Resistance="220 Ω" />
+
+<item itemtype="Push" CircId="Push-6" mainComp="false" Show_id="false" Show_Val="false" Pos="796,544" rotation="0" hflip="1" vflip="1" label="Push-6" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1 _Poles" />
+
+<item itemtype="Ground" CircId="Ground-7" mainComp="false" Show_id="false" Show_Val="false" Pos="500,532" rotation="0" hflip="1" vflip="1" label="Ground-7" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="Ground-8" mainComp="false" Show_id="false" Show_Val="false" Pos="920,756" rotation="0" hflip="1" vflip="1" label="Ground-8" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Voltage Source" CircId="Voltage Source-9" mainComp="false" ShowProp="MaxValue" Show_id="false" Show_Val="true" Pos="536,604" rotation="0" hflip="1" vflip="1" label="Voltage Source-9" idLabPos="-32,-48" labelrot="0" valLabPos="-8,30" valLabRot="0" Running="true" Value_Volt="5 V" MaxValue="5 V" />
+
+<item itemtype="Ground" CircId="Ground-15" mainComp="false" Show_id="false" Show_Val="false" Pos="604,412" rotation="0" hflip="1" vflip="1" label="Ground-15" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Push" CircId="Push-31" mainComp="false" Show_id="false" Show_Val="false" Pos="692,448" rotation="0" hflip="1" vflip="1" label="Push-31" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1 _Poles" />
+
+<item itemtype="Ground" CircId="Ground-36" mainComp="false" Show_id="false" Show_Val="false" Pos="876,564" rotation="0" hflip="1" vflip="1" label="Ground-36" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Hd44780" CircId="Hd44780-39" mainComp="false" Show_id="true" Show_Val="false" Pos="304,716" rotation="0" hflip="1" vflip="1" label="Hd44780-39" idLabPos="70,-82" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="2 _Rows" Cols="15 _Columns" />
+
+<item itemtype="Ground" CircId="Ground-42" mainComp="false" Show_id="false" Show_Val="false" Pos="328,800" rotation="0" hflip="1" vflip="1" label="Ground-42" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Connector" uid="connector-43" startpinid="Voltage Source-9-outPin" endpinid="mega32-1-RST" pointList="564,620,620,620,620,616" />
+
+<item itemtype="Connector" uid="connector-44" startpinid="Led-2-rPin" endpinid="Resistor-4-lPin" pointList="832,664,888,664" />
+
+<item itemtype="Connector" uid="connector-45" startpinid="Resistor-4-rPin" endpinid="Ground-8-Gnd" pointList="920,664,920,740" />
+
+<item itemtype="Connector" uid="connector-46" startpinid="mega32-1-PORTB3" endpinid="AudioOut-3-lPin" pointList="620,576,588,576,588,444,552,444,552,472" />
+
+<item itemtype="Connector" uid="connector-47" startpinid="AudioOut-3-rPin" endpinid="Ground-7-Gnd" pointList="552,480,500,480,500,516" />
+
+<item itemtype="Connector" uid="connector-48" startpinid="mega32-1-PORTA0" endpinid="Push-6-pinP0" pointList="684,552,780,552,780,544" />
+
+<item itemtype="Connector" uid="connector-49" startpinid="Led-2-lPin" endpinid="mega32-1-PORTB2" pointList="800,664,744,664,744,744,608,744,608,568,620,568" />
+
+<item itemtype="Connector" uid="connector-50" startpinid="Push-31-pinP0" endpinid="mega32-1-PORTB0" pointList="676,448,620,448,620,552" />
+
+<item itemtype="Connector" uid="connector-51" startpinid="Push-31-switch0pinN" endpinid="Ground-15-Gnd" pointList="708,448,712,448,712,396,604,396" />
+
+<item itemtype="Connector" uid="connector-52" startpinid="Push-6-switch0pinN" endpinid="Ground-36-Gnd" pointList="812,544,876,544,876,548" />
+
+<item itemtype="Connector" uid="connector-53" startpinid="Hd44780-39-PinRW" endpinid="Ground-42-Gnd" pointList="328,724,328,784" />
+
+<item itemtype="Connector" uid="Connector-63" startpinid="mega32-1-PORTC0" endpinid="Hd44780-39-dataPin0" pointList="684,696,700,696,700,752,344,752,344,724" />
+
+<item itemtype="Connector" uid="Connector-64" startpinid="mega32-1-PORTC1" endpinid="Hd44780-39-dataPin1" pointList="684,688,708,688,708,760,352,760,352,724" />
+
+<item itemtype="Connector" uid="Connector-78" startpinid="mega32-1-PORTC2" endpinid="Hd44780-39-dataPin2" pointList="684,680,716,680,716,768,360,768,360,724" />
+
+<item itemtype="Connector" uid="Connector-79" startpinid="mega32-1-PORTC3" endpinid="Hd44780-39-dataPin3" pointList="684,672,724,672,724,780,368,780,368,724" />
+
+<item itemtype="Connector" uid="Connector-80" startpinid="mega32-1-PORTC4" endpinid="Hd44780-39-dataPin4" pointList="684,664,732,664,732,792,376,792,376,724" />
+
+<item itemtype="Connector" uid="Connector-82" startpinid="mega32-1-PORTC5" endpinid="Hd44780-39-dataPin5" pointList="684,656,740,656,740,800,384,800,384,724" />
+
+<item itemtype="Connector" uid="Connector-83" startpinid="mega32-1-PORTC6" endpinid="Hd44780-39-dataPin6" pointList="684,648,752,648,752,808,392,808,392,724" />
+
+<item itemtype="Connector" uid="Connector-84" startpinid="mega32-1-PORTC7" endpinid="Hd44780-39-dataPin7" pointList="684,640,760,640,760,816,400,816,400,724" />
+
+<item itemtype="Connector" uid="Connector-85" startpinid="mega32-1-PORTD6" endpinid="Hd44780-39-PinRS" pointList="620,704,524,704,524,840,300,840,300,740,320,740,320,724" />
+
+<item itemtype="Connector" uid="Connector-86" startpinid="mega32-1-PORTD7" endpinid="Hd44780-39-PinEn" pointList="684,704,800,704,800,848,344,848,344,772,336,772,336,724" />
+
+</circuit>
